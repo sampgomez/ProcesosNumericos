@@ -1,7 +1,7 @@
 format long
 
-% x= [0 0.4000 0.8000 1.2000 1.6000 2.0000 2.4000 3.2000 3.6000 4.0000 4.4000 4.8000 5.2000]';
-% y= [0 0.0621 0.1797 0.2635 0.2783 0.2414 0.1932 0.1667 0.1852 0.2038 0.2119 0.2086 0.2002]';
+% x= [0 0.4000 0.8000 1.2000 1.6000 2.0000 2.4000 3.2000 3.6000 4.0000]';
+% y= [0 0.0621 0.1797 0.2635 0.2783 0.2414 0.1932 0.1667 0.1852 0.2038]';
 
 x = input('Enter the values for the vector x transpose: '); % x coordinates of known points
 y = input('Enter the values for the vector y transpose: '); % y coordinates of known points
