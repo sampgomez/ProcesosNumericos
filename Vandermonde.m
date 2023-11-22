@@ -7,16 +7,16 @@ x = input('Enter the values for the vector x transpose: '); % x coordinates of k
 y = input('Enter the values for the vector y transpose: '); % y coordinates of known points
 
 
-A=[x.^12 x.^11 x.^10 x.^9 x.^8 x.^7 x.^6 x.^5 x.^4 x.^3 x.^2 x x.^0];
+A=[x.^9 x.^8 x.^7 x.^6 x.^5 x.^4 x.^3 x.^2 x x.^0];
 
 b=y;
 a=inv(A)*b
 
 xpol=x(1):0.001:x(end);
-p=a(1)*xpol.^12 +a(2)*xpol.^11 +a(3)*xpol.^10 +a(4)*xpol.^9 +a(5)*xpol.^8 +a(6)*xpol.^7 +a(7)*xpol.^6 +a(8)*xpol.^5 +a(9)*xpol.^4 +a(10)*xpol.^3 +a(11)*xpol.^2 +a(12)*xpol.^1 +a(13);
+p=a(1)*xpol.^9 +a(2)*xpol.^8 +a(3)*xpol.^7 +a(4)*xpol.^6 +a(5)*xpol.^5 +a(6)*xpol.^4 +a(7)*xpol.^3 +a(8)*xpol.^2 +a(9)*xpol.^1 +a(10);
 
 xu= input('Enter the additional value ');
-pu= a(1)*xu^12 +a(2)*xu^11 +a(3)*xu^10 +a(4)*xu^9 +a(5)*xu^8 +a(6)*xu^7 +a(7)*xu^6 +a(8)*xu^5 +a(9)*xu^4 +a(10)*xu^3 +a(11)*xu^2 +a(12)*xu^1 +a(13)
+pu= a(1)*xu^9 +a(2)*xu^8 +a(3)*xu^7 +a(4)*xu^6 +a(5)*xu^5 +a(6)*xu^4 +a(7)*xu^3 +a(8)*xu^2 +a(9)*xu^1 +a(10)
 
 figure
 plot(xpol,p,'r',xu,pu,'b*')
